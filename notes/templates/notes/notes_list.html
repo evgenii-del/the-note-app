@@ -1,0 +1,14 @@
+{% extends 'wrapper.html' %}
+
+{% block title %}The notes{% endblock %}
+
+{% block content %}
+{% for note in notes %}
+<div>
+    {{note.title}}
+    <br>
+    {{note.content}}
+</div>
+<br>
+{% endfor %}
+{% endblock %}
